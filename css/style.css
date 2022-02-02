@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+nav a:visited{
+    color: white;
+}
+h5{
+    text-align: center;
+}
+
+body{
+    background-color: rgb(13, 76, 87);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(142, 159, 161)
+
+}
+.container{
+    padding: 5%;
+}
+div{
+    padding: 5%;
+
+}
+hr{
+    border: 1px solid cornsilk;
+    margin: 5% 0;
+}
+
+@media (min-width: 300px){
+    h2{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+    .container div{
+        flex-basis: auto;
+        float: left;
+
+    }
+    .container  nav{
+        display: none;
+    }
+    .header{
+        background: url("../img/img-banner.jpg");
+        position: relative;
+        height:25vh;
+        color: whitesmoke;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 2;
+        height: 15vh;
+        line-height: 6;
+        text-align: center;
+
+    }
+    .header p{
+        position: relative;
+        text-align: center;
+        z-index: 3;
+    }
+    .about li{
+        padding: 1%;
+        margin-left: 5%;
+    }
+    .about p{
+        line-height: 1.5;
+        margin-top: 2%;
+        padding: 0%;
+    }
+    .skills{
+        border: none;
+
+    }
+    .container-skills{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: none;
+        margin: auto;
+        padding: 14px 0;
+    }
+    .container-skills div{
+        height: 10px;
+        width: 35%;
+        border: none;
+        box-sizing:border-box;
+        
+    }
+    .container-skills div:active{
+        background-color: violet;
+    }
+    .qualification ol{
+        display: flex;
+        padding: 1%;
+        justify-content: space-between;
+        text-align: center;
+        width: 90%;
+        flex-wrap: wrap;
+        margin:auto;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+    .qualification li{
+        margin: 5% auto;
+        text-align: left;
+        list-style: none;
+    }
+    .qualification a{
+        color: rgb(142, 159, 161);
+    }
+    .references{
+        margin: auto;
+    }
+    
+}
+/* TABLET  */
+@media(min-width: 800px){
+    .header{
+        height: 50vh;
+    }
+    .header h2{
+        font-size: 4rem;
+        line-height: 7;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav li{
+        display: inline-block;
+        padding: 3%;
+    }
+}
+@media(min-width: 1000px){
+    .container nav{
+        display: inline-block;
+    }
+}
+
+/* DESKTOP */
+@media(min-width: 1200px){
+
+    .header{
+        height: 50vh;
+    }
+    .header h2{
+        font-size: 4rem;
+        line-height: 7;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav li{
+        display: inline-block;
+        padding: 3%;
+    }
+}
